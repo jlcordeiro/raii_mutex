@@ -1,11 +1,9 @@
-raii_mutex
-==========
+/**
+ * Sample class using a RAIIMutex to protect its member.
+ */
 
-Lightweight, header only, RAII version of POSIX mutexes.
+#include "../mutex.h"
 
-Sample code:
-
-```
 class Integer {
 private:
     mutable Mutex   _mutex;
@@ -30,4 +28,8 @@ public:
         return _i;
     }
 };
-```
+
+int main()
+{
+    return 0;
+}
